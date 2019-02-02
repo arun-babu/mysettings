@@ -38,8 +38,8 @@ font pango:monospace 16
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "/usr/X11R6/bin/xterm -bg black -fg white -fa 'Monospace' -fs 16"
-bindsym Print exec "/usr/X11R6/bin/xterm -bg black -fg white -fa 'Monospace' -fs 16"
+bindsym $mod+Return exec "/usr/X11R6/bin/xterm -bg black -fg white -fa 'Monospace' -fs 18"
+bindsym Print exec "/usr/X11R6/bin/xterm -bg black -fg white -fa 'Monospace' -fs 18"
 
 bindsym Mod4+Next exec "/usr/X11R6/bin/xbacklight -dec 20"
 bindsym Mod4+Prior exec "/usr/X11R6/bin/xbacklight -inc 20"
@@ -62,7 +62,7 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 #bindsym $mod+l focus up
 #bindsym $mod+l focus up
-bindsym $mod+l exec "xscreensaver-command -lock" 
+bindsym $mod+l exec "xlock" 
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
