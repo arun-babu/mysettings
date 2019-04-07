@@ -11,7 +11,11 @@
 
 set $mod Mod4
 
-new_window pixel 1
+smart_gaps on
+#new_window pixel 1
+gaps inner 5 
+for_window [class="^.*"] border pixel 0
+
 bindsym Mod1+Tab workspace next 
 bindsym Mod1+Shift+Tab workspace prev
 bindsym $mod+Tab workspace next 
