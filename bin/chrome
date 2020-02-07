@@ -1,0 +1,1 @@
+chrome.orig --js-flags=--noexpose_wasm
