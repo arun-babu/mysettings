@@ -51,8 +51,8 @@ bindsym Mod4+Prior exec "/usr/X11R6/bin/xbacklight -inc 20"
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym Mod1+F4 kill
-bindsym Mod4+period exec "mixerctl outputs.master=+5,+5" 
-bindsym Mod4+comma exec "mixerctl outputs.master=-5,-5" 
+bindsym Mod4+period exec "sndioctl output.level=+0.1" 
+bindsym Mod4+comma exec "sndioctl output.level=-0.1" 
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec /usr/local/bin/dmenu_run
